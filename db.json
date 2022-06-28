@@ -1,0 +1,134 @@
+{
+    "books": [
+        {
+            "id": 1,
+            "author": "Akshay",
+            "no_of_chapters": 6,
+            "cover_photo" : "https://mir-s3-cdn-cf.behance.net/project_modules/disp/0eb71c12308007.562664221dd10.jpg",
+            "book_name": "Full-Stack Development",
+            "category": "Novel",
+            "release_year": 2019,
+            "chapters": [
+                {"name": "HTML", "pages": 25},
+                {"name": "CSS", "pages": 20}
+            ]
+        },
+        {
+            "id": 2,
+            "author": "Akshay",
+            "no_of_chapters": 6,
+            "cover_photo" : "https://mir-s3-cdn-cf.behance.net/project_modules/disp/0eb71c12308007.562664221dd10.jpg",
+            "book_name": "Full-Stack Development",
+            "category": "Science_Fiction",
+            "release_year": 2019,
+            "chapters": [
+                {"name": "HTML", "pages": 25},
+                {"name": "CSS", "pages": 20}
+            ]
+        },
+        {
+            "id": 3,
+            "author": "Akshay",
+            "no_of_chapters": 6,
+            "cover_photo" : "https://mir-s3-cdn-cf.behance.net/project_modules/disp/0eb71c12308007.562664221dd10.jpg",
+            "book_name": "Full-Stack Development",
+            "category": "Science_Fiction",
+            "release_year": 2009,
+            "chapters": [
+                {"name": "HTML", "pages": 25},
+                {"name": "CSS", "pages": 20}
+            ]
+        },
+        {
+            "id": 4,
+            "author": "Akshay",
+            "no_of_chapters": 6,
+            "cover_photo" : "https://mir-s3-cdn-cf.behance.net/project_modules/disp/0eb71c12308007.562664221dd10.jpg",
+            "book_name": "Full-Stack Development",
+            "category": "Motivatiinal",
+            "release_year": 2011,
+            "chapters": [
+                {"name": "HTML", "pages": 25},
+                {"name": "CSS", "pages": 20}
+            ]
+        },
+        {
+            "id": 5,
+            "author": "Akshay",
+            "no_of_chapters": 6,
+            "cover_photo" : "https://mir-s3-cdn-cf.behance.net/project_modules/disp/0eb71c12308007.562664221dd10.jpg",
+            "book_name": "Full-Stack Development",
+            "category": "Thriller",
+            "release_year": 2020,
+            "chapters": [
+                {"name": "HTML", "pages": 25},
+                {"name": "CSS", "pages": 20}
+            ]
+        },{
+            "id": 6,
+            "author": "Sadhguru",
+            "no_of_chapters": 6,
+            "cover_photo" : "https://mir-s3-cdn-cf.behance.net/project_modules/disp/0eb71c12308007.562664221dd10.jpg",
+            "book_name": "Death",
+            "category": "Mystery",
+            "release_year": 2022,
+            "chapters": [
+                {"name": "HTML", "pages": 25},
+                {"name": "CSS", "pages": 20}
+            ]
+        },
+        {
+            "id": 7,
+            "author": "Sadhguru",
+            "no_of_chapters": 6,
+            "cover_photo" : "https://mir-s3-cdn-cf.behance.net/project_modules/disp/0eb71c12308007.562664221dd10.jpg",
+            "book_name": "The Mystic",
+            "category": "Novel",
+            "release_year": 2015,
+            "chapters": [
+                {"name": "HTML", "pages": 25},
+                {"name": "CSS", "pages": 20}
+            ]
+        },
+        {
+            "id": 8,
+            "author": "Akshay",
+            "no_of_chapters": 6,
+            "cover_photo" : "https://mir-s3-cdn-cf.behance.net/project_modules/disp/0eb71c12308007.562664221dd10.jpg",
+            "book_name": "Full-Stack Development",
+            "category": "Novel",
+            "release_year": 2019,
+            "chapters": [
+                {"name": "HTML", "pages": 25},
+                {"name": "CSS", "pages": 20}
+            ]
+        },
+        {
+            "id": 9,
+            "author": "Norman-Lewis",
+            "no_of_chapters": 6,
+            "cover_photo" : "https://mir-s3-cdn-cf.behance.net/project_modules/disp/0eb71c12308007.562664221dd10.jpg",
+            "book_name": "World-Power-Made-Easy",
+            "category": "grammer",
+            "release_year": 2016,
+            "chapters": [
+                {"name": "HTML", "pages": 25},
+                {"name": "CSS", "pages": 20}
+            ]
+        },
+        {
+            "id": 10,
+            "author": "Masai",
+            "no_of_chapters": 6,
+            "cover_photo" : "https://mir-s3-cdn-cf.behance.net/project_modules/disp/0eb71c12308007.562664221dd10.jpg",
+            "book_name": "Data-Analyst",
+            "category": "Novel",
+            "release_year": 2021,
+            "chapters": [
+                {"name": "HTML", "pages": 25},
+                {"name": "CSS", "pages": 20}
+            ]
+        }
+
+    ]
+}
