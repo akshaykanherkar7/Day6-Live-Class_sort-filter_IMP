@@ -1,4 +1,4 @@
-import * as types from "./action.types";
+import * as types from "./book.action.types";
 
 const initialState = {
   books: [],
@@ -6,7 +6,7 @@ const initialState = {
   isError: false,
 };
 
-export const reducer = (state = initialState, { type, payload }) => {
+export const bookReducer = (state = initialState, { type, payload }) => {
   switch (type) {
     case types.GET_BOOKS_LOADING: {
       return { ...state, isLoading: true, isError: false };

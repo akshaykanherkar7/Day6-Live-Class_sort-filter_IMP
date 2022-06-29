@@ -7,6 +7,7 @@ const BookCard = ({ bookData }) => {
       <div>{bookData.book_name}</div>
       <div>{bookData.release_year}</div>
       <div>{bookData.author}</div>
+      <div>{bookData.category}</div>
     </div>
   );
 };

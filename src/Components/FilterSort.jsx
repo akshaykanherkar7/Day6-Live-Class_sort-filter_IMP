@@ -1,17 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { useDispatch } from "react-redux";
 import { useSearchParams } from "react-router-dom";
-import { getBookAPI } from "../Redux/action";
 
 const FilterSort = () => {
-  const dispatch = useDispatch();
-
   const [searchParams, setSearchParams] = useSearchParams();
-  const urlCategory = searchParams.getAll("category");
-  const urlSort = searchParams.get("sortBy");
-
-  const [category, setCategory] = useState(urlCategory || []);
-  const [sortBy, setSortBy] = useState(urlSort || "");
+  const urlCategory = searchParams.getAll("category"); //when we copy URL from 1 tab to another tab It shows same Page bcz of this
+  const urlSort = searchParams.get("sortBy"); //when we copy URL from 1 tab to another tab It shows same Page bcz of this
+  const [category, setCategory] = useState(urlCategory || []); //when we copy URL from 1 tab to another tab It shows same Page bcz of this
+  const [sortBy, setSortBy] = useState(urlSort || ""); //when we copy URL from 1 tab to another tab It shows same Page bcz of this
 
   const handleCheckbox = (e) => {
     const option = e.target.value;
@@ -29,31 +24,24 @@ const FilterSort = () => {
   };
 
   useEffect(() => {
-    if (category) {
-      setSearchParams({ category });
-      dispatch(getBookAPI({ params: { category } }));
-    }
-  }, [category, dispatch, searchParams]);
-
-  useEffect(() => {
-    if (sortBy) {
-      const params = {
-        category: searchParams.getAll("category"),
-        sortBy,
-      };
-
-      const getBooksParams = {
-        params: {
-          category: searchParams.getAll("category"),
-          _sort: "release_year",
-          _order: sortBy,
-        },
-      };
+    if (category || sortBy) {
+      let params = {};
+      category && (params.category = category);
+      sortBy && (params.sortBy = sortBy);
 
       setSearchParams(params);
-      dispatch(getBookAPI(getBooksParams));
     }
-  }, [searchParams, dispatch, setSearchParams, sortBy]);
+  }, [category, setSearchParams,sortBy]);
+
+  // useEffect(() => {
+  //   if (sortBy) {
+  //     const params = {
+  //       category: searchParams.getAll("category"),
+  //       sortBy,
+  //     };
+  //     setSearchParams(params);
+  //   }
+  // }, [searchParams, setSearchParams, sortBy]);
 
   return (
     <div>

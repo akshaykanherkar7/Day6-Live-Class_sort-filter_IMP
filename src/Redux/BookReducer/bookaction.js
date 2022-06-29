@@ -1,11 +1,13 @@
-import * as types from "./action.types";
+import * as types from "./book.action.types";
 import axios from "axios";
 
 export const getBookAPI = (params) => (dispatch) => {
+  console.log("params IN ACTION", params);
   dispatch({ type: types.GET_BOOKS_LOADING });
   axios
-    .get("http://localhost:8080/books",params)
+    .get("http://localhost:8080/books", params)
     .then((res) => {
+      // console.log("resDAT:", res.data);
       dispatch({ type: types.GET_BOOKS_SUCCESS, payload: res.data });
     })
     .catch(() => {
